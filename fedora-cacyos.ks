@@ -36,3 +36,10 @@ dnf distro-sync --refresh -y
 # Enable low-latency scheduler engines
 systemctl enable --now ananicy-cpp
 %end
+
+
+
+# user command
+# Enroll the newly installed repository MOK keys into NVRAM
+#sudo mokutil --import /etc/pki/akmods/certs/public_key.der
+
